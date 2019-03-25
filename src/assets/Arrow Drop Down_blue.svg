@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/System/Arrow Drop Down</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.99961498,10 C7.89525812,10 7.63325346,10.6332535 8.41942501,11.419425 L11.2942268,14.2942268 C11.6840146,14.6840146 12.3127724,14.6872276 12.7057732,14.2942268 L15.580575,11.419425 C16.3645018,10.6354982 16.1125667,10 15.000385,10 L8.99961498,10 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons/System/Arrow-Drop-Down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#226294" xlink:href="#path-1"></use>
+    </g>
+</svg>

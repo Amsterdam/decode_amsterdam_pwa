@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Line/Form Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Line/Form-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Group" transform="translate(4.000000, 4.000000)" stroke="#FFFFFF" stroke-width="2">
+            <path d="M5,0 L2,0 C0.8954305,2.02906125e-16 -1.3527075e-16,0.8954305 0,2 L0,5" id="Path-6"></path>
+            <path d="M5,12 L2,12 C0.8954305,12 -1.3527075e-16,12.8954305 0,14 L0,17" id="Path-6-Copy-2" transform="translate(2.500000, 14.500000) rotate(-90.000000) translate(-2.500000, -14.500000) "></path>
+            <path d="M17,1.42108547e-14 L14,1.42108547e-14 C12.8954305,1.44137608e-14 12,0.8954305 12,2 L12,5" id="Path-6-Copy" transform="translate(14.500000, 2.500000) rotate(90.000000) translate(-14.500000, -2.500000) "></path>
+            <path d="M17,12 L14,12 C12.8954305,12 12,12.8954305 12,14 L12,17" id="Path-6-Copy-3" transform="translate(14.500000, 14.500000) rotate(180.000000) translate(-14.500000, -14.500000) "></path>
+        </g>
+    </g>
+</svg>

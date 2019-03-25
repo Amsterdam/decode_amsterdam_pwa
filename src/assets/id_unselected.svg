@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Bold/Pick location Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons/Bold/Pick-location-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Mask" fill="#9B9B9B" transform="translate(12.000000, 12.000000) rotate(90.000000) translate(-12.000000, -12.000000) " x="5" y="3" width="14" height="18" rx="2"></rect>
+        <g id="Group-4" transform="translate(6.000000, 8.000000)" fill="#FFFFFF">
+            <ellipse id="Oval-9" cx="3.09090909" cy="1.70666667" rx="1.74545455" ry="1.70666667"></ellipse>
+            <path d="M1.1187156,7.96444444 C0.566330822,7.96444444 0.168482856,7.52306173 0.268120265,6.98007467 C0.268120265,6.98007467 0.355222604,3.98222222 3.02762539,3.98222222 C5.70002819,3.98222222 5.78713052,6.98007467 5.78713052,6.98007467 C5.86974447,7.52372708 5.48017333,7.96444444 4.93653519,7.96444444 L1.1187156,7.96444444 Z" id="Path-7"></path>
+        </g>
+    </g>
+</svg>

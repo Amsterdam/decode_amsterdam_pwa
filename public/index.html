@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico?v=OmJr8wEy07">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>img/icons/favicon-32x32.png?v=OmJr8wEy07">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>img/icons/favicon-16x16.png?v=OmJr8wEy07">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>apple-touch-icon.png?v=OmJr8wEy07">
+    <link rel="shortcut icon" href="<%= BASE_URL %>favicon.ico?v=OmJr8wEy07">
+    <link rel="mask-icon" href="<%= BASE_URL %>img/icons/safari-pinned-tab.svg?v=OmJr8wEy07" color="#5bbad5">
+
+    <link rel="manifest" href="<%= BASE_URL %>manifest.json?v=OmJr8wEy07">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="<%= BASE_URL %>browserconfig.xml?v=OmJr8wEy07">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+
+    <title>DECODE</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but decode doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <script async type="text/javascript" src="index.js"></script>
+
+    <div id="app"></div>
+
+    <script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Check if there are any navbar burgers
+			if ($navbarBurgers.length > 0) {
+
+				// Add a click event on each of them
+				$navbarBurgers.forEach( el => {
+					el.addEventListener('click', () => {
+
+						// Get the target from the "data-target" attribute
+						const target = el.dataset.target;
+						const $target = document.getElementById(target);
+
+						// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+						el.classList.toggle('is-active');
+						$target.classList.toggle('is-active');
+
+					});
+				});
+			}
+
+		});
+    </script>
+
+    <!-- built files will be auto injected -->
+  </body>
+</html>

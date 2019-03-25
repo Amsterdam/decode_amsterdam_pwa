@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/System/Arrow Back</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.8,11 L12.6907561,6.10924387 C13.0824607,5.7175393 13.0892946,5.08929462 12.691797,4.69179704 L12.708203,4.70820296 C12.3170733,4.31707326 11.6764822,4.3235178 11.2900534,4.70994663 L4.70994663,11.2900534 C4.31785393,11.6821461 4.3235178,12.3235178 4.70994663,12.7099466 L11.2900534,19.2900534 C11.6821461,19.6821461 12.3107054,19.6892946 12.708203,19.291797 L12.691797,19.308203 C13.0829267,18.9170733 13.0828746,18.2828746 12.6907561,17.8907561 L7.8,13 L19.0016228,13 C19.5530113,13 20,12.5561352 20,12 L20,12 C20,11.4477153 19.5513267,11 19.0016228,11 L7.8,11 Z" id="path-1"></path>
+    </defs>
+    <g id="Icons/System/Arrow-Back" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Mask" fill="#4A4A4A" xlink:href="#path-1"></use>
+    </g>
+</svg>
