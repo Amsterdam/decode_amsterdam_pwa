@@ -10,7 +10,7 @@ This project was created as a proof of concept prototype. There for it was never
   
 The Decode Amsterdam project excites of two other parts which are needed to take full potential of this app:
 
-* [Passport Scanner](https://github.com/Amsterdam/decode_passport_scanner) (Reading a Dutch passport and transferring its data to this PWA)
+* [Passport Scanner](https://github.com/Amsterdam/decode_passport_scanner) (Reading an EU passport and transferring its data to this PWA)
 * [Session Manager](https://github.com/Amsterdam/decode_session_manager) (Managing sessions for onboarding and disclosure)
 
 ### Requirements
