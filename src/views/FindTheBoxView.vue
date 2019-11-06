@@ -21,8 +21,6 @@ export default {
     };
   },
   beforeCreate() {
-
-
     var personal_data = getItem('personal_data');
     if (personal_data != null) {
       this.$router.push("/profile");

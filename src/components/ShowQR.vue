@@ -7,7 +7,7 @@
     <p>{{base.request.type}} {{base.request.subType}} {{base.request.data}}</p>
     <br> -->
     
-    <qrcode-vue :value="base.url" :size="size" level="H"></qrcode-vue>
+    <qrcode-vue :value="base.sessionId" :size="size" level="H"></qrcode-vue>
     
     <div id="show-qr-footer">
     <a class="show-qr-cancel-button" @click="base.cancel()">Cancel</a>

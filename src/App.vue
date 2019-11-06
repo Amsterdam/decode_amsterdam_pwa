@@ -33,11 +33,8 @@ export default {
         question : { pageTitle: "Question Generator", navPopup : false, section : "claim" },
         findthebox : { pageTitle: "Welcome", navPopup : true, navPopupBackButton: false },
         onboarding : { pageTitle: "Onboarding", navPopup : true, navPopupBackButton: false },
-        onboarding_id : { pageTitle: "Onboarding", navPopup : true, navPopupBackButton: false },
         scan : { pageTitle: "Scan QR Code", navPopup : true, navPopupBackButton: true , backButtonLocation: 'profile' },
         disclosure : { pageTitle: "Disclosure", navPopup : true, navPopupBackButton: true , backButtonLocation: 'profile'},
-        disclosure_id : { pageTitle: "Disclosure", navPopup : true, navPopupBackButton: true , backButtonLocation: 'profile'},
-
         // ALL OTHER ROUTES TODO
       },
       pageTitle: "Personal Identity",

@@ -1,7 +1,8 @@
 .DS_Store
 node_modules
 /dist
-/*.sh
+/decode-session-manager
+/logs
 
 # local env files
 .env.local

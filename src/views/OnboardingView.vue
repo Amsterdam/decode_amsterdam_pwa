@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+import { mapGetters } from "vuex";
 import { getRequest, attachPublicKey, getSessionStatus } from "../api";
 import { setItem } from "../services/persistent_storage";
 import sha512 from "js-sha512";
@@ -41,9 +41,6 @@ export default {
     CreatePin
   },
   methods: {
-    ...mapActions({
-      setOnboardingRequest: "setOnboardingRequest",
-    }),
     firstPin(/*code*/) {
       // this.startOnboarding();
 
@@ -54,17 +51,19 @@ export default {
     secondPin(code) {
       const secondHash = sha512.update(code);
       console.log(secondHash.hex());
-      if (this.firstHash !== secondHash) {
+      if (this.firstHash != secondHash) {
         this.firstHash = null;
         console.log("Retry");
         // TODO: give notification to retry
       }
       console.log("Accepted");
     },
-    startOnboarding() {
+    async startOnboarding() {
       this.zenroom("keypair");
       const publicKey = JSON.parse(this.keypair).public;
-      attachPublicKey(publicKey, this.request.id).then(() => this.listenToStatus());
+      await attachPublicKey(publicKey, this.request.id);
+
+      this.listenToStatus();
     },
     async handleEncrypedData() {
       this.session = await getRequest(this.request.id);
@@ -84,25 +83,20 @@ export default {
     },
     listenToStatus() {
       this.statusInterval = setInterval(async () => {
-        const response = await getSessionStatus(this.request.id);
+        var response = await getSessionStatus(this.request.id);
         this.status = response.response;
-        console.log(this.status);
-        if (this.status === "GOT_ENCR_DATA") {
+        console.log(this.status)
+        if (this.status == "GOT_ENCR_DATA") {
           this.handleEncrypedData();
           clearInterval(this.statusInterval);
         }
       }, 1000);
     },
     zenroom(method) {
-      window.Module['onRuntimeInitialized'] = function() {
-        console.log("onRuntimeInitialized!");
-      };
-
       window.Module = {
         ...window.Module,
         exec_ok: () => (this.result += " OK"),
-        exec_error: () => (this.result += " ERROR"),
-        onRuntimeInitialized: () => (console.log("onRuntimeInitialized call"))
+        exec_error: () => (this.result += " ERROR")
       };
 
       const keypair = () => {
@@ -114,10 +108,10 @@ export default {
         const script = _keygen;
 
         window.Module.ccall(
-            "zenroom_exec",
-            "number",
-            ["string", "string", "string", "string", "number"],
-            [script, conf, keys, data, 1]
+          "zenroom_exec",
+          "number",
+          ["string", "string", "string", "string", "number"],
+          [script, conf, keys, data, 1]
         );
       };
 
@@ -145,21 +139,9 @@ export default {
     }
   },
   mounted() {
-    const routeQuery = this.$route.query;
-
-    if (routeQuery.id) {
-      console.log("query:", routeQuery);
-      // const localResponse = await getRequest(routeQuery.id);
-      // this.setOnboardingRequest(localResponse.response);
-      // this.$router.push('/onboarding');
-
-      getRequest(routeQuery.id)
-        .then(r => {
-          this.request = r.response;
-          this.startOnboarding();
-        });
-    }
-    else if (this.onboardingRequest) {
+  },
+  created() {
+    if (this.onboardingRequest) {
       this.request = this.onboardingRequest;
       this.startOnboarding();
     }

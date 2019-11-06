@@ -15,7 +15,7 @@ import { getRequest } from "../api";
 export default {
   data() {
     return {
-      sessionId: null,
+      sessionId: null
     };
   },
   computed: {
@@ -36,15 +36,15 @@ export default {
       this.$router.go(-1); // more generic
     },
     onDecode(decodedString) {
+      
       if (decodedString) {
-        const url = decodedString;
-        this.sessionId = url.substring(url.lastIndexOf('=')+1, url.length);
+        this.sessionId = decodedString;
         this.handleSessionId(this.sessionId);
       }
     },
     async handleSessionId(sessionId) {
       const localResponse = await getRequest(sessionId);
-      if (localResponse.response.request === "onboarding") {
+      if (localResponse.response.request == "onboarding") {
         this.setOnboardingRequest(localResponse.response);
         this.$router.push("/onboarding");
       } else {

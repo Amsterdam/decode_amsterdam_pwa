@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+
+  pwa:
+    restart: always
+    container_name: decode-pwa
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./logs:/var/log/nginx
+      - ./dist:/dist
+
+  server:
+    restart: always
+    container_name: session-manager
+    build: ./decode-session-manager
+    command: python api.py
+    ports:
+      - 5000:5000
